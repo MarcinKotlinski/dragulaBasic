@@ -1,7 +1,14 @@
 <ion-header>
   <ion-navbar>
+
+    <ion-buttons start>
+      <button ion-button icon-only menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
     <ion-title>
-      Ionic Blank
+
+      Dragula COPYABLE
     </ion-title>
   </ion-navbar>
 </ion-header>
@@ -10,19 +17,23 @@
   <ion-row>
     <ion-col width-50 class="left">
       <div class="header">First Bucket</div>
-      <ion-list dragula="DRAGULA_FACTS">
+      <ion-list dragula="COPYABLE" id="left">
         <button ion-item>You can move these <br>elements between these two containers</button>
         <button ion-item>Moving them anywhere<br> else isn't quite possible</button>
-        <button ion-item>There's also the possibility of moving <br>elements around in the same container, changing their position</button>
+        <button ion-item>There's also the possibility of moving <br>elements around in the same container, changing
+          their position
+        </button>
       </ion-list>
     </ion-col>
 
     <ion-col width-50 class="right">
       <div class="header">Second Bucket</div>
-      <ion-list dragula="DRAGULA_FACTS">
-        <button ion-item>This is the default use case. You only<br> need to specify the containers you want to use</button>
+      <ion-list dragula="COPYABLE" id="right">
+        <button ion-item>This is the default use case. You only<br> need to specify the containers you want to use
+        </button>
         <button ion-item>More interactive<br> use cases lie ahead</button>
-        <button ion-item>Make sure to <br>check out the <a href="https://github.com/bevacqua/dragula#readme">documentation on
+        <button ion-item>Make sure to <br>check out the <a href="https://github.com/bevacqua/dragula#readme">documentation
+          on
           GitHub!</a></button>
       </ion-list>
     </ion-col>

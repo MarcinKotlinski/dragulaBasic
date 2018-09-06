@@ -8,11 +8,13 @@ import {MyApp} from './app.component';
 import {HomePage} from '../pages/home/home';
 import {DragulaService} from "ng2-dragula";
 import {DragulaModule} from "ng2-dragula";
+import {SpillPage} from "../pages/spill/spill";
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage,
+    SpillPage
   ],
   imports: [
     BrowserModule,
@@ -22,7 +24,8 @@ import {DragulaModule} from "ng2-dragula";
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    SpillPage
   ],
   providers: [
     StatusBar,

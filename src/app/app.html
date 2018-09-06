@@ -1,1 +1,11 @@
-<ion-nav [root]="rootPage"></ion-nav>
+<ion-menu side="right" [content]="content">
+  <ion-content padding>
+    <ion-list>
+      <button ion-item style="background: aliceblue">Dragula COPYABLE</button>
+      <button ion-item style="background: aliceblue" (click)="moveToDragulaSpill()">Dragula SPILL</button>
+      <button ion-item style="background: aliceblue"></button>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-nav [root]="rootPage" #content ></ion-nav>
